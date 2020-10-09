@@ -41,7 +41,9 @@ class Airplane {
 */
 
 class Person {
-
+	constructor(name, age) {
+		
+	}
 }
 
 /*
@@ -153,4 +155,13 @@ if (typeof exports !== 'undefined') {
   if (Instructor) { module.exports.Instructor = Instructor }
   if (Student) { module.exports.Student = Student }
   if (ProjectManager) { module.exports.ProjectManager = ProjectManager }
+} else {
+  var results = results || {}
+  if (Airplane) { results.Airplane = Airplane }
+  if (Person) { results.Person = Person }
+  if (Car) { results.Car = Car }
+  if (Lambdasian) { results.Lambdasian = Lambdasian }
+  if (Instructor) { results.Instructor = Instructor }
+  if (Student) { results.Student = Student }
+  if (ProjectManager) { results.ProjectManager = ProjectManager }
 }
